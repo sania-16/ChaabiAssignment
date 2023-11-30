@@ -4,7 +4,7 @@ from qdrant_client import QdrantClient
 from transformers import BertModel, BertTokenizer
 import torch
 
-dataset_path = 'bigBasketProducts.csv'
+dataset_path = '/Users/sania/Downloads/bigBasketProducts.csv'
 df = pd.read_csv(dataset_path)
 
 # Get information about the dataset
