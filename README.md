@@ -14,3 +14,23 @@ Instructions:
 - Run the FastAPI application with
     uvicorn main:app --reload.
 - Access the API documentation at http://127.0.0.1:8000/docs to test your API interactively.
+
+Sample Queries:
+
+1. curl -X 'POST' \
+   'http://127.0.0.1:8000/get_contextual_answer' \
+    -H 'accept: application/json' \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "query": "Find similar products to XYZ"
+  }'
+
+2. curl -X 'POST' \
+  'http://127.0.0.1:8000/get_contextual_answer' \
+   -H 'accept: application/json' \
+   -H 'Content-Type: application/json' \
+   -d '{
+   "query": "Find products similar to this one."
+  }'
+
+
