@@ -30,7 +30,7 @@ Sample Queries:
    -H 'accept: application/json' \
    -H 'Content-Type: application/json' \
    -d '{
-   "query": "Find products similar to this one."
+   "query": "Find products with rating greater than 4."
   }'
 
 
