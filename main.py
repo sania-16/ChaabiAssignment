@@ -4,6 +4,8 @@ from transformers import BertModel, BertTokenizer
 import torch
 from code import get_contextual_embeddings, query_qdrant_for_context
 
+csv_path = "/Users/sania/Downloads/bigBasketProducts.csv"
+df = load_and_preprocess_data(csv_path)
 
 app = FastAPI()
 
